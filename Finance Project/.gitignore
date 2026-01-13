@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+.env
+.env.*
+!/.env
+# allow workspace-managed env files
+!apps/api/.env
+!apps/api/.env.local
+!apps/web/.env.local
+dist/
+build/
+.next/
+coverage/
+tmp/
+.idea/
+.vscode/
+.DS_Store

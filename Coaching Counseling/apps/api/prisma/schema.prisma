@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  learningGoals LearningGoal[]
+}
+
+model LearningGoal {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  status      GoalStatus @default(PLANNED)
+  plannedAt   DateTime?
+  startedAt   DateTime?
+  completedAt DateTime?
+  ownerId     String
+  owner       User      @relation(fields: [ownerId], references: [id])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum GoalStatus {
+  PLANNED
+  IN_PROGRESS
+  COMPLETED
+  ARCHIVED
+}

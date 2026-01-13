@@ -1,0 +1,35 @@
+
+> api@ dev C:\Users\binar\OneDrive\Documents\Finance Project\apps\api
+> ts-node-dev --respawn --transpile-only src/main.ts
+
+[INFO] 14:20:18 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.3.3)
+Error: Config validation error: "DATABASE_URL" is required
+[ERROR] 14:20:19 Error: Config validation error: "DATABASE_URL" is required
+    at Function.forRoot (C:\Users\binar\OneDrive\Documents\Finance Project\node_modules\.pnpm\@nestjs+config@3.1.1_@nestjs+common@10.3.2_reflect-metadata@0.1.13\node_modules\@nestjs\config\dist\config.module.js:78:23)
+    at Object.<anonymous> (C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\app.module.ts:12:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)
+    at Module._compile (C:\Users\binar\OneDrive\Documents\Finance Project\node_modules\.pnpm\source-map-support@0.5.21\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\binar\AppData\Local\Temp\ts-node-dev-hook-6331602173694095.js:69:33)
+    at node:internal/modules/cjs/loader:1839:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\binar\AppData\Local\Temp\ts-node-dev-hook-6331602173694095.js:114:20)
+    at require.extensions.<computed> (C:\Users\binar\AppData\Local\Temp\ts-node-dev-hook-6331602173694095.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\binar\OneDrive\Documents\Finance Project\node_modules\.pnpm\ts-node-dev@2.0.0_@types+node@18.18.6_typescript@5.3.3\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+[INFO] 14:24:51 Restarting: C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\app.module.ts has been modified
+Error: Cannot find module '@prisma/client'
+[ERROR] 14:24:52 Error: Cannot find module '@prisma/client'
+Require stack:
+- C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\prisma\prisma.service.ts
+Require stack:
+- C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\app.module.ts
+- C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\main.ts
+- C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\prisma\prisma.service.ts
+- C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\app.module.ts
+- C:\Users\binar\OneDrive\Documents\Finance Project\apps\api\src\main.ts
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)

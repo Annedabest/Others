@@ -1,0 +1,18 @@
+{
+  "name": "finance-receipt-platform",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  }
+}
